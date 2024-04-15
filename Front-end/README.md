@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Liquid Exception: Liquid syntax error (line 50): Variable '{{a}' was not properly terminated with regexp: /\}\}/ in Back-end/node_modules/balanced-match/README.md
