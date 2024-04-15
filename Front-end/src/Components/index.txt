@@ -1,0 +1,202 @@
+
+============================Create project command ===============
+1) npx create-react-app projectname    --> crate project command.
+2) npm install react-router-dom        --> install router packages.
+3) npm start                           --> start development server.
+
+4) rafce - It is a shortcut of create componenet.
+
+============================Attach bootstrap link ==================
+1) In a public folder there is a index.html file.
+2) You can attach bootstrap link cdn and bundel.js script and change the title.
+==============================================================
+
+==============================Src =========================
+1) Our work start in src folder we create a Components folder insight the src folder.
+2) In a src folder we create component, Pages, context folder.
+3) IN a component folder we create assets folder.
+
+============================== Navbar folder=================
+1) component folder create navbar folder create navbar.jsx file and navbar.css file.
+2)  In App.js file Import Navbar component  and mounted this component.
+3) In a assets folder all_product.js file to import images and data in json format.
+4) import logo_icon  and cart_icon in navbar.jsx file.
+5) and apply css for navbar file.
+6) create usestate variable  onclick add arrow function.
+7) add condition menu to change the state hr underline when user click on nav tab.
+8) add poppins google font add link in index.html file. and add font-family index.css file.
+
+===========================================================
+
+=============================pages folder ============
+1) create shop.jsx , LoginSignup.jsx, shopcategory.jsx, product.jsx,cart.jsx.
+
+===========================Router setup=========================
+1) In a app.js file we setup our router.
+2) import {BrowserRouter,Routes,Route} form react-router-dom.
+3)add BrowserRouter component and insight this component we use navbar component.
+4) then Routes component add Route  
+5) <Route   path '/' element = {<Shop>} />
+5) <Route   path '/mens' element = {<ShopCategory category="men"/>} />
+5) <Route   path '/womens' element = {<ShopCategory  category="women"/>} />
+5) <Route   path '/kids' element = {<ShopCategory category="kids"/>}  />
+6)<Route   path '/kids' element = {<Product/>} >
+    <Route path= ':productId' element = {<Product />} />
+   </Route>
+7) <Route path= '/cart' element ={<Cart />} />
+7) <Route path= '/login' element ={<LoginSignup />} />
+
+8) In a navbar.jsx file import Link and use in each li name use in Link component.
+9) add link in button tag. 
+10) addd single line style.
+================================================================
+
+=======================Hero folder ================
+1) create Hero.jsx file and Hero.css file.
+2) mount this componenet in shop.jsx file. Hero element in shop.jsx file.
+3) import icon in Hero.jsx file and write the text and style from the each tag.
+4)  *{margin 0} in index.css file.
+=====================================
+
+======================Item folder ================
+1) Item.jsx and Item.css file.
+2) use props to use the product image,name,...etc into this file.
+=====================================================
+
+=====================Popular folder ============================
+1) Popular.jsx file and css file.
+2) In a assets/data.js file we have four product in data_product object.
+3) id,name,image,new_price,old_price store in data_prooduct object in data.js file.
+4)  import data_product in our Popular.jsx file.
+5)  use data_product.map method and arrow function and return Item component and pass props key .
+6) In a shop page we mount the Popular component.
+===================================================
+
+=======================Offers folder===================
+1) create offer.jsx file and css file.
+2) mount this component in Shop.jsx file.
+3)import exclusive image from our assets folder.
+==============================================================
+
+======================= new collection folder============
+1) create newCollection.jsx and css file and import css.
+2) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================new_collection folder==============
+1) use map to add new collection data  
+2) import  new_collections.js file data which is store in assets folder 
+3) pass one array & use arrow function  insight the map method.
+4) use Item property which is make in item folder by using props.
+5) import item component to use it's property.
+6) new_collection component use in shop.jsx file.
+===========================================
+
+==================NewsLetter folder =========
+1) create NewsLetter.jsx file and css file and add component in shop.jsx file which is store in pages folder.
+=============================================
+
+====================Footer folder==============
+1) create Footer.jsx file and css file.
+2) use this component in app.js file. 
+========================================
+
+====================context folder ============
+1) first export const  ShopContext and create context  null.
+2)  ShopContextProvider nam ka function create props use kiya.
+3) contextvalue variable ke andar all_product ko store kiya 
+4) ShopContextProvider component ko return kiya with value of all_product.
+5) is ke andar {props.children} uske child component ka data attach kiya.
+6) <ShopContextProvider > use in index.js file and add <app> component insight this component.
+===================================================
+
+============shop.category.jsx ======
+1) props add and store all_product in a variable 
+2) use ShopContext and import.
+3) use props to filter our products.
+4) import banner in app.js file men, women, kids banner and use in route.
+5) import dropdown icon and import Item component
+6) use all_product component and add map method insight use of arrow function 
+7) use if else condition to distribute the product by their category men women and kids
+8) create seperate css folder for pages.
+9) create shop.category.css file.
+=========================================
+
+===================LoginSignup.jsx file ===============
+1) import LoginSignup.css file and create a form.
+2) In a product.jsx file store all_product and use ShopContext.
+3) copy the product id from app.jsx file in a route 
+4) useparams hook and import from react router dom.
+5)  product.jsx file create product vaiable and store all_product and concatenate find method or insight the arrow function add condition.
+6) producid is a string format to convert into number format by e.id
+
+===============================Breadcrum.jsx ============
+1) add props store in product variable.
+2) Import arrow.png .
+3) In a product.jsx file we use this component and variable product of this file.
+4) In a item.jsx file we use props.image into a Link component and import this component.
+5) product.id is a expression add in template literals ${} this is template literals.
+6) when we click on any product it will show product id.
+ =================================================
+
+ ==================productdisplay.jsx file ============
+ 1) Use productdisplay component in Product.jsx file .
+ 2) And Product.jsx file insight the productdisplay component product props use and pass product data {product}.
+ 3) productdisplay.jsx file use props and create product variable and store props.
+ 4) when user click the product show the name with the help of product.name property.
+ 5) import product icon show rating star.
+ 6) Use old and new product price .
+ 7) breadcrum style done.
+ =====================================================
+
+ ==================DescriptionBox.jsx ===========
+ 1) mount this component in our product page.
+ =====================================================
+
+ =========================Related products.jsx file =============
+ 1) import data.js file.
+ 2)data_product concatenate with math method and create arrow function 
+ 3) copy   Item component from newcollection.jsx file and use insight the return.
+ 4) mount this component in product page.
+ ==================================
+ 1) Item component  in image tag use onclick.
+ 2) when we click on any related product it will display on webpage.
+ ===============================================
+ 1) open ShopContext.jsx file  quantity of product added in card.
+ 2) create getDefaultCart arrow function and assign empty cart object .
+ 3) for loop condition pass.
+ 4)variable name cartItem and function name setCartItem  use usestate and pass getDefaultCart function 
+ 5) In a contextvalue variable add cartItems.
+ 6) addtocart and removefromcart function and store in contextvalue variable.
+ ==============================================
+
+ 1) productdisplay file addtocart function  create.
+ 2) add onclick function  call addtocart function in button tag and pass product id insight this function.
+ ============================================
+
+ ==================cartitems.jsx file ==================
+ 1)this component use in cart.jsx file. 
+ 2) import ShopContext into this component.
+ 3) use map method and arrow function.
+ 4) add the quantity of product and price and remove as per click on remove icon.
+ 5) shopcontext.jsx file  gettotalAmount function and add for loop .
+ 6) and add this function in contextvalue variable in same file.
+ 7) and access getTotalCartAmount function in cartItems.jsx file.
+ 8) create getTotalCartItems function in shopcontext.jsx file.
+ 9) In a Navbar.jsx file getTotalCartItems store by Usecontext(ShopContext).
+ 10) use getTotalCartItems this function in Navbar.jsx file.
+ ============================================================= 

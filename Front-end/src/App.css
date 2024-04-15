@@ -1,0 +1,7 @@
+/* styles.css */
+
+body {
+  max-width: 1700px;
+  margin: 0 auto; /* Center the content */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}

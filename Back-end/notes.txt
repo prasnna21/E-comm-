@@ -1,0 +1,14 @@
+1) npm init comand then install express by cmd --> npm i express
+2) install jsonwebtoken package use to generate webtoken -->npm install jsonwebtoken.
+3) install mongoose package --> npm install mongoose.
+4) install multer package --> npm install multer.
+5) install cors package use cross origin resource sharing middleware --> npm install cors.
+6) create index.js file .
+7) search on google mongodb atlas login create project and create database use free MO server google cloud  and select region.
+8) username show and  password you can edit (password-->Password@321)(username-->bakadeprasnna)
+9) close and click on database>connect and then choose compass and copy url and use in index.js file.
+10) create upload folder and use multer to storage provide destination path of the upload folder.
+11) create product api and test in postman or thundar cliend by choose a file into body and key name product.
+12) create Product schema and write object inside it.
+13) check the api in postman or thunder client whether it is working or not and give the image url to store.
+14)

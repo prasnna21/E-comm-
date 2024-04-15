@@ -1,0 +1,6 @@
+1) cmd>npx create-react-app projectname
+2) cmd> npm install react-router-dom.
+3) rafce it is a shortcut to create component.
+4) create all pages and in app.js file we import routes,route and browserrouter and insight this use 
+ route and given page component to access.
+5)
